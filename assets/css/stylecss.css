@@ -1,0 +1,179 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap');
+:root {
+    --main-color: #4624af;
+    --main-color-hover: #e6c34f;
+    --text-color: white;
+  }
+
+  *{
+    box-sizing: border-box;
+    font-family: "roboto";
+  }
+
+  html, body{
+    margin: 0;
+    padding: 0;
+  }
+
+  .button {
+    text-decoration: none;
+    text-align: center;
+    display: inline-block;
+    padding:  12px;
+    background-color: var(--main-color);
+    color: var(--text-color);
+    border-radius: 30px;
+    font-size: 1.1em;
+    margin-top: 0%;
+  }
+
+
+  .container{
+    background-image: linear-gradient(90deg, rgba(72,59,113,0.799614914325105) 100%, rgba(72,59,113,0.799614914325105) 100%), url("../images/01.jpg");
+    height: 75vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    z-index: 100;
+  }
+
+  .container header{
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    padding-top: 10px;
+    margin: 0 auto;
+    position: sticky;
+  }
+  
+  header .logo img{ 
+    padding-top: 10px;
+    width: 150px;
+  }
+
+  .navbar-menu ul {
+    list-style-type: none;
+    padding-top: 10px;
+    padding-left: 0%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .container li a {
+    display: block;
+    color: white;
+    padding: 0 1.1em;
+    text-decoration: none;
+    font-size: 20px;
+  }
+
+  .btnAdm{
+    text-align: center;
+    padding-top: 10px;
+  }
+
+
+
+  .hero-text {
+    text-align: center;
+    color: white;
+    padding: 2rem;
+  }
+  
+  .hero-text h1 {
+    font-size: 4em;
+    color: var(--text-color);
+  }
+  
+  .hero-text p {
+    font-size: 17px;
+    margin-top: 0;
+    color: var(--text-color);
+  }
+
+  .btnPljr{
+    padding: 50px;
+  }
+
+  .text1{
+    margin:auto;
+    padding: 15px 15px;
+  }
+
+  .text2{
+    margin:auto;
+    padding: 15px 15px;
+    color: #4624af;
+  }
+
+  .block-items{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    box-shadow: 0 5px 5px 0 rgb(18 63 82 / 4%), 0 0 0 1px rgb(176 181 193 / 20%);
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: center;
+    margin: auto;
+    padding: 40px 35px;
+  }
+
+  .block-items2{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    box-shadow: 0 5px 5px 0 rgb(18 63 82 / 4%), 0 0 0 1px rgb(176 181 193 / 20%);
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    margin: auto;
+    padding: 40px 35px;
+  }
+
+  .block-items3{
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    box-shadow: 0 5px 5px 0 rgba(255, 255, 255, 0.04), 0 0 0 1px rgba(255, 255, 255, 0.2);
+    background-color: #fff;
+    border-radius: 12px;
+    overflow: hidden;
+    text-align: left;
+    margin: auto;
+    padding: 40px 35px;
+  }
+
+  .block-items4{
+    background-image: linear-gradient(90deg, rgba(72, 59, 113, 0) 100%, rgba(255, 255, 255, 0) 100%), url("../images/Anjay\ Foto.png");
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    z-index: 10;
+  }
+
+  .block-items5{
+    background-image: linear-gradient(90deg, rgba(72, 59, 113, 0) 100%, rgba(255, 255, 255, 0) 100%), url("../images/Kemitraan.png");
+    height: 75%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 0px;
+    z-index: 10;
+  }
+
+  .card-item{
+    height: 20%;
+  }
+
+  .checkbox{
+    mask-type :"checkbox" ;
+    color : "grape";
+  }
