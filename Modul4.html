@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--                       YOHANES MAHARDIKA ARYA        ⠀      ⠀⠀
+            ⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⡀⠀⠀⠀⢀⣀⣠⣤⣼⣿⣿⣿⣿⣿⣿⣿⣅⣀⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣯⣽⣢⢤⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⣿⣿⣿⣿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣯⡍⠲⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⠀⠀⠀⠉⠉⢩⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠋⢢⣈⠫⢄⠀⠀⠀⠀⠀⠀⢀⡄⠂⢄⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⡇⠀⠀⠀⠀⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣦⣽⣿⣿⣿⣿⣽⣿⣿⣿⣿⣷⡧⠀⠀⠀⠀⢀⠎⠀⠀⠀⢃⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣿⣿⣿⣿⣿⣿⣿⡟⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⣿⣟⣣⠀⠀⠀⡎⠀⠀⠀⠀⠀⡆⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣿⣿⣿⣿⣿⣿⠏⠀⠀⠀⠀⢠⣿⣿⣿⣿⣿⣿⣿⣿⡋⣿⣿⣿⣿⣿⣿⣿⣿⣿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡔⡄⠀⠁⠀⠀⠀⠀⠀⢰⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⣿⣿⣿⠿⠋⠁⠀⠀⠀⠀⠀⣼⣿⣿⣿⣿⣿⣿⣿⣿⡇⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡇⢰⠇⠀⠀⠀⠀⠀⡘⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠉⠀⠀⠀⠀⠀⠀⠀⠀⣼⣼⣿⣿⠿⣿⣿⣿⡿⢹⣿⣿⣿⣿⣿⣿⡽⣯⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠎⠦⡀⠀⠀⠀⢀⠇⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⢢⣿⡇⣼⣧⣶⣿⣿⣿⠁⢸⢿⣿⣿⣿⣿⣿⣷⡘⣷⡹⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠧⡙⠀⠑⢄⣀⠤⠂⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣸⣟⣼⣿⣿⣿⣿⣿⣿⠀⠀⢛⣿⣿⣿⣿⣿⡿⣿⡬⠿⣾⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⢯⣿⣿⣿⣿⣿⣻⡆⢰⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠂⠀⣿⢻⣿⣿⣿⣿⣿⣿⣿⡏⠉⠉⠻⢿⣿⣿⣿⣿⣜⢿⣮⡙⠷⣦⣉⠓⢿⣷⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⠆⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⠤⠤⠤⠤⣀⠀⠘⠀⠀⣿⢸⢿⣿⣿⣿⣿⣿⠘⢿⠈⠁⠐⠄⠙⢟⢿⣿⣿⣦⡵⣟⣶⣽⣿⣿⣿⣿⣿⣿⣿⣿⣯⣾⣿⣿⣿⣿⣼⣿⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⢀⠎⠀⠀⠀⠀⠀⠀⠑⠆⠀⠀⣿⠀⣿⣿⣿⣿⣿⣿⣀⣬⣧⣖⣢⠄⠀⠀⠀⠈⠑⠈⠹⠿⠋⠘⣿⣿⣿⡆⣿⣿⣿⡏⡧⣿⣿⣿⣿⣿⣿⣿⣧⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠊⠀⠀⠀⠀⠀⠀⠀⠀⠈⢆⠀⢿⠀⢹⣿⣿⣿⣿⣿⣿⡿⠻⣿⣿⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⢮⠴⢃⣿⣿⣿⣿⣷⡟⣿⣿⣿⣿⣿⣟⣿⠀⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠸⠀⠀⠀  A⠀⠀⠀⠀⠈⠄⠸⡆⡄⢿⣿⣿⣿⣿⣿⡻⢄⠙⢿⣻⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣾⢻⣿⣿⣿⢈⣷⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡆⠀⠀⠀  R⠀⠀⠀⠀⠀⢱⠐⠹⣵⠀⣿⣿⣿⣿⣿⢿⠦⠀⠀⠀⠀⠀⠀⠂⠀⠀⠀⠀⠀⠀⠀⡠⠞⠁⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡷⠀⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⡁⠀⠀⠀⠀ Y ⠀⠀⠀⠀⢸⠀⠀⠘⢦⣿⣿⣿⣿⣿⣮⣆⠀⠀⠀⠀⠀⠈⠂⠀⠀⠀⠀⠀⠀⠀⠀⠀⣠⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣇⢣⠀⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠇⠀⠀⠀⠀⠀A ⠀⠀⠀⠀⠸⠀⠀⠀⢸⣿⣿⣿⣿⣿⣿⣿⣦⣤⡤⠀⠀⠀⠀⢀⣀⣀⣀⡀⠀⠀⢀⠴⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡌⡆⠀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⢰⠀⠀⠀⠀⠀❤⠀⠀⠀⠀⡅⠀⠀⠀⣾⠇⣿⣿⣿⣿⣿⣿⣿⣿⣶⣄⡀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⠘⡀⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⡀⠀⠀⠀⠀⠀⠀⠀ ⠀⡜⠀⠀⠀⣸⡟⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣢⢄⠀⠀⢀⣤⣶⣿⢟⣿⣿⣿⣿⠰⢸⠾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡆⢡⠀⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠰⡀⠀⠀⠀⠀⠀⠀⢀⠜⠀⠀⠀⣰⡟⠀⢸⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠇⠉⣫⢻⡿⠛⢁⢾⣿⣿⣿⡇⠇⡜⠀⡿⣻⣿⣿⣿⣿⣿⣿⣿⣿⣻⡈⡆⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠑⢄⠀⠀⠀⡠⠔⠁⠀⠀⠀⣰⡟⠀⠀⣟⣿⣿⣿⣿⣿⣿⠿⠛⠋⠉⠉⠛⠻⢗⠏⠏⢸⢇⢠⠟⣾⣿⣿⣿⣱⠊⠀⠀⡿⡞⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⢸⠀⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠉⠈⠁⠀⠀⠀⠀⢀⡾⠋⠀⠀⣸⠇⣿⣹⣿⣿⣿⣇⠀⠀⠀⠀⠀⠀⠀⡈⠀⠀⠸⢻⠋⢸⣿⣿⣿⢿⠃⠀⠀⠀⣇⠗⢿⡇⢹⣿⣿⢿⣿⣿⣿⣿⣏⡆⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡰⠛⠁⠀⠀⢠⡟⢀⣿⣿⣿⣿⣿⡟⣄⠀⠀⠀⠀⢠⣴⣧⣤⣄⣠⠣⣀⣿⣿⣿⣟⠎⠀⠀⠀⠀⣽⠀⠘⣿⠊⠫⡺⣷⣌⠉⡿⢿⣿⡇⠀⠀⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠊⠀⠀⠀⢀⡠⣾⣁⣼⣿⣿⣿⢹⣿⡇⠈⠑⠂⠀⠀⠈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣽⣿⣿⠇⡜⠘⡄⠀⠹⣧⠀⠈⠪⢙⢻⠷⠦⠿⣿⡄⠀⠀
+⠀⠀⢀⣀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡠⠊⠀⣀⠔⣒⣵⣾⣿⣿⣿⣿⣿⣿⡇⢸⣿⠀⠀⡇⠀⠀⠀⠀⣿⣿⣿⣿⠿⣿⣿⣿⣿⣿⣿⣿⣿⢋⡼⠔⠀⠉⢄⡀⠙⣧⠀⣀⡴⠉⠉⠉⠉⠹⣷⡀⠀
+⠀⠈⢏⣷⣮⣕⠢⠀⠀⠀⠀⢠⠞⢀⠔⢉⣴⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⠁⣸⠃⠀⠠⠃⠀⠀⠀⢐⡨⠋⠀⣗⡄⢸⣿⣿⡿⡿⣿⡿⢣⠊⠀⠀⠀⠀⠀⠈⠑⠚⠻⣿⣄⣀⡀⠀⢀⣠⣿⣗⡀
+⠀⠀⠀⢻⣿⣿⣿⣄⢂⠀⢠⣟⠔⠁⣰⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢀⠏⣀⠞⠀⠀⠀⠀⠀⠈⠀⠀⠀⣿⠀⢸⣿⣟⠀⢣⠀⡰⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠈⠉⠛⠛⠛⠛⠊⢸⣿⡝
+⠀⠀⠀⠀⢻⣿⣿⣿⣆⢃⢸⡏⢀⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣾⣿⡁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠘⣧⢸⣿⡟⠀⠸⠊⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⣷
+⠀⠀⠀⠀⠀⢻⣿⣿⣿⡞⡔⣣⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣄⠀⠀⠀⠀⠀⠀⠀⠀⣠⠀⠘⠻⡼⣇⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⡞⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣿⢻⣿
+⠀⠀⠀⠀⠀⠀⢻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⠀⠀⠀⠀⠀⢀⠇⠀⠀⠀⠑⠌⠢⠀⣀⣀⠀⠀⠀⠀⠀⠀⣽⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢰⣿⢸⣿
+⠀⠀⠀⠀⠀⠀⠈⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⡀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢀⣠⣰⣿⣿⣯⣆⠀⠀⠀⠀⠀⠃⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣼⣿⢸⣿
+⠀⠀⠀⠀⠀⠀⠀⠈⣏⠻⢿⣿⣿⣿⣿⣿⣿⡇⠿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⡄⠀⠀⠆⠀⢀⣠⢰⣿⣿⣿⣿⣿⣿⣿⣿⡆⠀⠀⠀⠜⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⢠⣿⡟⢸⡟
+⠀⠀⠀⠀⠀⠀⠀⠀⢸⢇⠈⢿⣿⣿⣿⣿⣿⠁⢀⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⡈⣠⣶⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣆⠀⢠⠁⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⣾⡟⢁⡟⠀
+⠀⠀⠀⠀⠀⠀⠀⠀⠘⠀⠆⠈⢿⣿⣿⣿⡇⠀⢸⠀⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣧⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡄⡎⠀⠀⠀⠀⠀⣀⣀⣀⣀⣀⣰⣏⣀⣊⣀⣀
+⠀
+-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Identitas" author="Arya/1204210062">
+    
+    <title>WEB Sistem Informasi KW</title>
+    <link href="assets/images/logotel.png" rel="shortcut icon">
+
+    <link rel="stylesheet" href="assets/css/stylecss.css">
+</head>
+
+<body>
+
+
+    <div class="container">
+
+
+
+        <header>
+            <div class="logo">
+                <img src="assets/images/logo-is-new-ittelkom-sby.png" alt="">
+            </div>
+            <div class="navbar-menu">
+                <nav>
+                    <ul>
+                        <li><a href="#" class="active">Tentang Kami</a></li>
+                        <li><a href="#">Akademik</a></li>
+                        <li><a href="#">Kehidupan Kampus</a></li>
+                        <li><a href="#">Dosen & Staff</a></li>
+                        <li><a href="#">Blog</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="btnAdm">
+                <a href="#" class="button">Admisi</a>
+            </div>
+        </header>
+
+
+
+        <div class="hero-text">
+            <h1>Excellent in Connecting System</h1>
+            <p><strong>Sistem Informasi (SI) </strong>adalah kombinasi dari teknologi informasi dan aktivitas manusia <br> yang menggunakan teknologi tersebut untuk mendukung operasi dan manajemen.</p>
+            <div class="btnPljr">
+                <a style="font-size: 20px;" href="#" class="button">Pelajari Lebih Lanjut</a>
+            </div>
+        </div>
+
+
+
+        <div class="block-items">
+            <div class="card-item">
+                <div class="ugb-feature-grid__image"><img class="ugb-img wp-image-1764 lazy loaded"
+                        src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/02/content-management-system-1.svg"
+                        data-src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/02/content-management-system-1.svg"
+                        alt="Healthy Food" width="70" data-was-processed="true">
+                </div>
+                <div class="ugb-feature-grid__content">
+                    <h5 class="ugb-feature-grid__title">Consultant &amp;
+                        <br>Solution Architect
+                    </h5>
+                    <p class="ugb-feature-grid__description">Mampu menganalisis
+                        dan menyusun pemodelan arsitektur bisnis agar teknologi
+                        infomasi dan bisnis proses dalam perusahaan selaras
+                        dengan mempertimbangkan kualitas performa, keamanan, dan
+                        tata kelola.</p>
+                </div>
+            </div>
+
+            <hr>
+
+
+
+            <div class="card-item">
+                <div class="ugb-feature-grid__image"><img class="ugb-img wp-image-1762 lazy loaded"
+                        src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/02/web-analytics-1.svg"
+                        data-src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/02/web-analytics-1.svg"
+                        alt="Education" width="70" data-was-processed="true">
+                </div>
+                <div class="ugb-feature-grid__content">
+                    <h5 class="ugb-feature-grid__title">System <br>Integrator
+                    </h5>
+                    <p class="ugb-feature-grid__description">Mampu menganalisis,
+                        menyusun proses bisnis, menentukan sistem ERP,
+                        mengintegrasikan dan melakukan pengujian sesuai modul
+                        yang dibutuhkan sebagai solusi integrasi sistem
+                        terkomputerisasi baik secara fisik maupun fungsional.
+                    </p>
+                </div>
+            </div>
+
+
+            <hr>
+
+
+            <div class="card-item">
+                <div class="ugb-feature-grid__image"><img class="ugb-img wp-image-2738 lazy loaded"
+                        src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-300x300.png"
+                        data-src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-300x300.png"
+                        alt="Medical" width="70"
+                        data-srcset="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-300x300.png 300w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-1024x1024.png 1024w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-150x150.png 150w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-768x769.png 768w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-1534x1536.png 1534w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico.png 1951w"
+                        data-sizes="(max-width: 300px) 100vw, 300px" sizes="(max-width: 300px) 100vw, 300px"
+                        srcset="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-300x300.png 300w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-1024x1024.png 1024w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-150x150.png 150w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-768x769.png 768w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico-1534x1536.png 1534w, https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Data-extraction-amico.png 1951w"
+                        data-was-processed="true"></div>
+                <div class="ugb-feature-grid__content">
+                    <h5 class="ugb-feature-grid__title">Data <br>Engineer</h5>
+                    <p class="ugb-feature-grid__description">Mampu untuk membuat
+                        desain arsitektur data yang mencakup proses pengelolaan,
+                        penggunaan, penyimpanan, pengintegrasikan serta analisa
+                        data sesuai dengan kebutuhan perusahaan.</p>
+                </div>
+            </div>
+
+
+            <hr>
+
+
+            <div class="card-item">
+                <div class="ugb-feature-grid__image"><img class="ugb-img wp-image-2740 lazy loaded"
+                        src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Mobile-development-amico.svg"
+                        data-src="https://is.ittelkom-sby.ac.id/wp-content/uploads/2022/10/Mobile-development-amico.svg"
+                        alt="IS Developer" width="70" data-was-processed="true">
+                </div>
+                <div class="ugb-feature-grid__content">
+                    <h5 class="ugb-feature-grid__title">Information System
+                        (IS)<br>Developer</h5>
+                    <p class="ugb-feature-grid__description">Mampu untuk
+                        membuat, mengembangkan, menguji dan mengevaluasi
+                        perangkat lunak berupa web, mobile, maupun desktop yang
+                        mendukung tujuan bisnis dan menyelesaikan permasalahan
+                        sesuai dengan kebutuhan perusahaan.</p>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+
+        <div class="block-items2">
+
+            <div class="card-item"><img src="./assets/images/AnjayCumlaude.png">
+            </div>
+        
+            <div class="card-item">  
+                <h5 class="text1" >Dua Wisudawan Sistem Informasi Berhasil Meraih Predikat Cumlaude</h5>
+                <h6 class="text1"> March 29, 2022</h6>
+                <p class="text1" >ITTelkom Surabaya telah menggelar wisuda ke-1 pada Sabtu (26/03/ 2022) kemarin. Dua Wisudawan Sistem Informasi Berhasil Meraih Predikat Cumlaude.</p>
+                <a href="#" class="button">Selengkapnya</a>
+            </div>
+         
+        </div>
+
+        <br>
+        <br>
+
+        <div class="block-items3">
+            <div class="card-item">
+                <img src="./assets/images/Buhawn.png" alt="">
+            </div>
+
+            <div class="card-item">
+                <h5 class="text2">Sambutan Ketua Program Studi Sistem Informasi</h5>
+                <h6 class="text1"> Assalamualaikum Warahmatullahi Wabarakatuh</h6>
+                <p class="text1">Salam hormat,
+                    Selamat Datang di Program Studi S1 Sistem Informasi,
+                    IT Telkom Surabaya.
+                    
+                    Di era digital seperti saat ini hampir semua perusahaan membutuhkan sistem informasi, sehingga perusahaan atau organisasi sangat membutuhkan sumber daya manusia yang ahli di bidang sistem informasi. Sistem Informasi mengintegrasikan teknologi, manusia, proses bisnis dan tata kelola perencanaan untuk memberikan solusi IT pada perusahaan.</p>
+                    <a href="#" class="button">Selengkapnya</a>
+            </div>
+            
+        </div>
+
+        <div class="block-items4">
+            <!-- masuk ke css class .block-items4 -->
+        </div>
+
+        <div class="block-items3">
+
+            <div class="card-item">
+                <h4 class="text2">Visi Keilmuan Sistem Informasi</h4>
+                <p class="text1">Menjadi Program Studi Berstandar Internasional di bidang Tata Kelola dan Pengambangan TIK yang berfokus pada maritim, logistik dan transnportasi.</p>
+
+                <p>Beberapa program mata kuliah unggulan pada Sistem Informasi diantaranya:</p>
+               
+                <div class="ProgramMatkul">
+                    <ul type="circle">
+                        <li class="checkbox">tata kelola dan manajemen Teknologi informasi Sistem Enterprise</li>
+                        <li class="checkbox">manajemen Proyek Sistem Informasi</li>
+                        <li class="checkbox">Sistem Enterprise</li>
+                        <li class="checkbox">Alogaritma Struktur Data</li>
+                        <li class="checkbox">Perancangan basis Data</li>
+                        <li class="checkbox">manajemen Logistik</li>
+                    </ul>
+                </div>
+                    
+            </div>
+
+            <div class="card-item">
+                <img src="assets/images/Ilustrasi2.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="block-items5">
+            <!-- masuk ke css class .block-items5 -->
+        </div>
+
+        <div class="block-items3">
+
+            <div class="card-item">
+                <h3 class="hero-text">Visi Keilmuan Sistem Informasi</h3>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
